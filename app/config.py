@@ -21,6 +21,9 @@ class Settings(BaseSettings):
     VAULT_TOKEN: str = ""
     VAULT_SECRET_PATH: str = "fastapi/database"
 
+    # JWT settings
+    JWT_SECRET: str = "your-secret-key-change-in-production"
+
     class Config:
         env_file = ".env"
         case_sensitive = True
